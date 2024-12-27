@@ -4,7 +4,7 @@ import { styles } from './BatButtomStyle';
 import { BatTextInput } from '../batTextInput/BatTextInput';
 import generatePass from '../../service/passwordService';
 import * as Clipboard from 'expo-clipboard';
-import BatCheckBox  from '../BatCheckBox/BatRadioButton';
+import BatRadioButton  from '../BatRadioButton/BatRadioButton';
 
 export function BatButtom() {
     const [pass, setPass] = useState('')
@@ -21,7 +21,7 @@ export function BatButtom() {
 
   return (
     <>
-        <BatCheckBox passwordLength = {passwordLength} setPasswordLength={setPasswordLength}/>
+        <BatRadioButton passwordLength = {passwordLength} setPasswordLength={setPasswordLength}/>
         <BatTextInput pass={pass}/>
 
         <Pressable
